@@ -343,6 +343,49 @@ footer a:hover{color:var(--orange)}
   .svc-card h3{font-size:15px}
 }
 
+
+/* === ORSA premium corporate palette override === */
+:root{
+  --orange:#FF7A00;
+  --orange2:#E96E00;
+  --cyan:#18C8D2;
+  --dark:#111315;
+  --dark2:#191C1F;
+  --ink:#17191C;
+  --muted:#6B7178;
+  --line:#E8EAED;
+  --offwhite:#F7F7F5;
+  --white:#FFFFFF;
+}
+
+/* Keep the site bright, but make the brand accents stronger and more technical */
+body{background:var(--white);color:var(--ink)}
+header{background:rgba(255,255,255,.96);border-bottom-color:var(--line)}
+.logo b{color:var(--dark)}
+.logo b span{color:var(--orange)}
+.logo small{color:var(--muted)}
+.burger{color:var(--dark)}
+.btn.primary,.mbar a:first-child{background:var(--orange);color:#111;border-color:var(--orange)}
+.btn.primary:hover,.mbar a:first-child:hover{background:var(--orange2);border-color:var(--orange2)}
+.btn.ghost{border-color:var(--dark);color:var(--dark)}
+.btn.ghost:hover{background:var(--dark);color:var(--white)}
+.eyebrow,.kicker,.svc-icon,.svc-card .lnk{color:var(--orange)}
+.section-head p,.lead,.svc-card p{color:var(--muted)}
+.svc-grid,.svc-card{border-color:var(--line)}
+.svc-card{background:var(--white)}
+.svc-card:hover{background:var(--offwhite)}
+.mbar{background:rgba(247,247,245,.97);border-top-color:var(--line)}
+.mbar a:last-child{background:var(--dark);border-color:var(--dark);color:var(--white)}
+.mbar a:last-child:hover{background:var(--dark2)}
+footer{background:var(--dark);color:var(--white)}
+footer .logo b{color:var(--white)}
+footer .logo b span{color:var(--orange)}
+footer a,footer p,footer small{color:#C7CBD0}
+footer a:hover{color:var(--orange)}
+input,select,textarea{border-color:#D8DCE0;background:#fff;color:var(--ink)}
+input:focus,select:focus,textarea:focus{border-color:var(--orange);outline-color:var(--orange)}
+::selection{background:var(--orange);color:#111}
+
 </style>
 </head>
 <body>
