@@ -280,6 +280,69 @@ footer a:hover{color:var(--orange)}
   .svc-grid,.proj-grid,.blog-grid{grid-template-columns:1fr}
   .foot-grid{grid-template-columns:1fr}
 }
+
+/* === ORSA mobile responsive fix === */
+@media (max-width:560px){
+  html,body{width:100%;max-width:100%;overflow-x:hidden}
+  body{padding-bottom:calc(66px + env(safe-area-inset-bottom,0px))}
+  .wrap{width:100%;max-width:100%;padding-left:16px;padding-right:16px}
+
+  header{padding:10px 0}
+  header.scrolled{padding:8px 0}
+  header .wrap{gap:10px}
+  .logo{min-width:0;gap:4px;flex:1}
+  .logo b{font-size:21px;white-space:nowrap}
+  .logo small{font-size:8px;letter-spacing:1px;white-space:normal;line-height:1.15;max-width:155px}
+  .head-actions{gap:8px;flex-shrink:0}
+  .head-actions .btn{padding:9px 11px;font-size:12px;line-height:1.1;white-space:nowrap}
+  .burger{font-size:24px;line-height:1;width:34px;height:34px}
+  .mobilenav{top:62px;padding:24px 18px}
+
+  .hero{min-height:auto;padding-top:118px;padding-bottom:58px}
+  .hero-grid{gap:28px}
+  .hero h1{font-size:clamp(40px,13vw,58px)}
+  .hero .lead{font-size:16px}
+  .hero-ctas{display:flex;flex-direction:column;align-items:stretch;gap:10px}
+  .hero-ctas .btn{justify-content:center;width:100%}
+  .hero-panel{aspect-ratio:16/10}
+
+  section{padding:68px 0}
+  .section-head{margin-bottom:32px}
+  h2{font-size:clamp(31px,10vw,42px)}
+
+  .svc-grid{grid-template-columns:repeat(2,minmax(0,1fr));width:100%}
+  .svc-card{min-width:0;padding:22px 14px}
+  .svc-icon{width:38px;height:38px;margin-bottom:12px}
+  .svc-card h3{font-size:16px;line-height:1.22;margin-top:10px;overflow-wrap:anywhere}
+  .svc-card p{font-size:13px;line-height:1.45}
+  .svc-card .lnk{font-size:12.5px;margin-top:12px}
+
+  .why-grid{grid-template-columns:1fr 1fr;gap:20px}
+  .proj-grid,.blog-grid,.foot-grid{grid-template-columns:1fr}
+  .contact-grid{gap:34px}
+  .foot-bottom{margin-top:32px}
+
+  .mbar{gap:8px;padding:8px 10px calc(8px + env(safe-area-inset-bottom,0px))}
+  .mbar a{padding:11px 8px;font-size:13.5px}
+
+  .overlay{padding:74px 12px calc(82px + env(safe-area-inset-bottom,0px))}
+  .overlay-panel{padding:26px 18px}
+  .related-list{grid-template-columns:1fr}
+
+  img,svg,video,iframe,canvas{max-width:100%;height:auto}
+  input,select,textarea,button{max-width:100%}
+}
+
+@media (max-width:360px){
+  .wrap{padding-left:12px;padding-right:12px}
+  .logo b{font-size:19px}
+  .logo small{font-size:7.5px;max-width:135px}
+  .head-actions .btn{padding:8px 9px;font-size:11px}
+  .burger{width:30px;font-size:22px}
+  .svc-card{padding:18px 10px}
+  .svc-card h3{font-size:15px}
+}
+
 </style>
 </head>
 <body>
