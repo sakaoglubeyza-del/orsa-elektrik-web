@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ORSA Elektrik | Elektrik, Güvenlik Kamerası ve Uydu Sistemleri</title>
+<meta name="description" content="ORSA Elektrik; elektrik tesisatı, arıza-bakım, pano sistemleri, aydınlatma, güvenlik kamerası, uydu ve diafon sistemlerinde profesyonel çözümler sunar. Hemen arayın: 0 533 472 34 19.">
+<meta property="og:title" content="ORSA Elektrik | Uydu ve Kamera Sistemleri">
+<meta property="og:description" content="Elektrik, güvenlik kamerası ve uydu sistemlerinde profesyonel çözümler.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Electrician",
+  "name": "ORSA Elektrik",
+  "description": "Elektrik tesisatı, arıza-bakım, pano sistemleri, aydınlatma, güvenlik kamerası, uydu ve diafon sistemleri.",
+  "telephone": "+905334723419",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Akşemsettin Cd. No:3/C, Zümrütevler",
+    "addressLocality": "Maltepe",
+    "addressRegion": "İstanbul",
+    "postalCode": "34852",
+    "addressCountry": "TR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 40.9367981,
+    "longitude": 29.1474408
+  },
+  "areaServed": "TR",
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "00:00",
+    "closes": "23:59"
+  }]
+}
+</script>
+<style>
+:root{
+  --bg:#ffffff; --bg-2:#fff3e2; --bg-3:#e7faf8;
+  --orange:#ff9f1c; --orange-2:#e08800;
+  --teal:#2ec4b6; --teal-light:#cbf3f0;
+  --ink:#14181c; --muted:#65707a; --line:rgba(20,24,28,.10);
+  --display:'Big Shoulders Display',sans-serif;
+  --body:'Work Sans',sans-serif;
+  color-scheme: light;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.55;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+  overflow-x:hidden;}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--display);font-weight:800;letter-spacing:.2px;line-height:1.02;text-transform:uppercase}
+h2{font-size:clamp(34px,5vw,54px)}
+h3{font-size:22px;text-transform:none;font-weight:700}
+.eyebrow{color:var(--orange);font-weight:700;font-size:14px;font-family:var(--body)}
+.muted{color:var(--muted)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:3px;font-weight:600;
+  border:1px solid transparent;cursor:pointer;font-family:var(--body);font-size:15px;transition:transform .18s ease,background .18s ease,border-color .18s ease}
+.btn-primary{background:var(--orange);color:#171200}
+.btn-primary:hover{background:var(--orange-2);transform:translateY(-2px)}
+.btn-outline{border-color:var(--line);color:var(--ink)}
+.btn-outline:hover{border-color:var(--orange);transform:translateY(-2px)}
+.btn-wa{background:var(--teal-light);color:#0b6e64;border-color:rgba(46,196,182,.4)}
+.btn-wa:hover{background:#b7ece5}
+
+/* header */
+header{position:fixed;top:0;left:0;right:0;z-index:50;padding:16px 0;
+  background:rgba(255,255,255,.78);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);
+  transition:padding .25s ease,box-shadow .25s ease}
+header.scrolled{padding:10px 0;box-shadow:0 10px 26px rgba(20,24,28,.08)}
+header .wrap{display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;flex-direction:column;line-height:1;gap:6px}
+.logo b{font-family:var(--display);font-size:26px;font-weight:800;color:var(--ink)}
+.logo b span{color:var(--orange)}
+.logo small{font-size:10.5px;color:var(--muted);letter-spacing:1.5px}
+nav{display:flex;gap:30px;font-size:14.5px;font-weight:500}
+nav a{color:var(--muted);position:relative;padding:4px 0}
+nav a::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:2px;background:var(--orange);
+  transform:scaleX(0);transform-origin:left;transition:transform .25s ease}
+nav a:hover{color:var(--ink)}
+nav a.active{color:var(--ink)}
+nav a.active::after{transform:scaleX(1)}
+.head-actions{display:flex;align-items:center;gap:14px}
+.burger{display:none;background:none;border:0;color:var(--ink);font-size:26px;cursor:pointer}
+.mobilenav{display:none;position:fixed;inset:0;top:70px;background:var(--bg);z-index:49;padding:30px 24px;flex-direction:column;gap:22px;font-size:20px}
+.mobilenav.open{display:flex}
+
+/* ticker */
+.ticker{overflow:hidden;border-bottom:1px solid var(--line);background:var(--bg-2);padding:13px 0}
+.ticker-track{display:flex;width:max-content;gap:44px;animation:ticker 26s linear infinite}
+.ticker-track b{display:flex;align-items:center;gap:10px;font-size:13.5px;font-weight:600;color:var(--ink);white-space:nowrap}
+.ticker-track b .dot{width:5px;height:5px;border-radius:50%;background:var(--orange);flex-shrink:0}
+@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* hero */
+.hero{position:relative;min-height:92vh;display:flex;align-items:center;padding-top:110px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(700px 500px at 82% 18%, rgba(255,159,28,.16), transparent 60%),
+    repeating-linear-gradient(90deg, rgba(20,24,28,.05) 0 1px, transparent 1px 90px),
+    repeating-linear-gradient(0deg, rgba(20,24,28,.05) 0 1px, transparent 1px 90px);
+  z-index:0}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(46px,7.4vw,88px)}
+.hero h1 .l1,.hero h1 .l2{display:block;opacity:0;transform:translateY(28px);animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards}
+.hero h1 .l2{color:var(--orange);animation-delay:.14s}
+.hero p.lead{opacity:0;transform:translateY(18px);animation:rise .8s .3s cubic-bezier(.2,.7,.2,1) forwards;
+  margin-top:22px;font-size:18px;color:var(--muted);max-width:52ch}
+.hero-ctas{opacity:0;transform:translateY(18px);animation:rise .8s .44s cubic-bezier(.2,.7,.2,1) forwards;
+  margin-top:34px;display:flex;gap:14px;flex-wrap:wrap}
+@keyframes rise{to{opacity:1;transform:translateY(0)}}
+.hero-panel{position:relative;aspect-ratio:4/5;border:1px solid var(--line);border-radius:4px;
+  background:linear-gradient(155deg,var(--teal-light),#ffffff 70%);overflow:hidden;
+  opacity:0;animation:rise .9s .2s cubic-bezier(.2,.7,.2,1) forwards}
+.hero-panel::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(220px circle at var(--mx,50%) var(--my,20%), rgba(255,159,28,.28), transparent 72%)}
+.hero-panel svg{position:absolute;inset:0;width:100%;height:100%}
+.wire{stroke:var(--teal);stroke-width:2;fill:none;stroke-dasharray:6 10;animation:flow 6s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-160}}
+.hero-panel .tag{position:absolute;left:20px;bottom:20px;font-size:13px;color:var(--ink);
+  background:rgba(255,255,255,.82);padding:6px 12px;border:1px solid var(--line);border-radius:3px}
+@media(prefers-reduced-motion:reduce){*{animation:none !important;transition:none !important}}
+
+/* generic section */
+section{padding:110px 0}
+.section-head{max-width:640px;margin-bottom:56px}
+.section-head h2{margin-top:10px}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about-visual{aspect-ratio:1/1;border-radius:4px;border:1px solid var(--line);
+  background:linear-gradient(160deg,var(--teal-light),#ffffff);position:relative;overflow:hidden}
+.about-visual .grid-lines{position:absolute;inset:0;
+  background:repeating-linear-gradient(45deg, rgba(255,159,28,.10) 0 2px, transparent 2px 26px)}
+.about p{color:var(--muted);font-size:17px;margin-top:18px}
+.about-caps{position:relative;z-index:1;height:100%;display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line)}
+.about-caps .cap{background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;
+  padding:14px;text-align:center;transition:background .2s ease}
+.about-caps .cap:hover{background:var(--bg-3)}
+.about-caps .cap .ic{color:var(--orange)}
+.about-caps .cap span{font-size:13px;color:var(--muted);font-weight:500}
+
+/* services */
+.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.svc-card{background:var(--bg);padding:32px 26px;transition:background .25s ease,transform .25s ease;cursor:pointer}
+.svc-card:hover{background:var(--bg-3);transform:translateY(-4px)}
+.pulse-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#1fb35a;position:relative;margin-right:2px}
+.pulse-dot::after{content:"";position:absolute;inset:-4px;border-radius:50%;border:1.5px solid #1fb35a;animation:pulse 1.8s ease-out infinite}
+@keyframes pulse{0%{transform:scale(.6);opacity:.8}100%{transform:scale(2);opacity:0}}
+.svc-icon{width:44px;height:44px;border:1px solid var(--line);border-radius:3px;display:flex;align-items:center;justify-content:center;color:var(--orange);margin-bottom:16px;transition:transform .25s ease,background .25s ease}
+.svc-card:hover .svc-icon{transform:rotate(-6deg) scale(1.08);background:var(--teal-light)}
+.svc-num{font-family:var(--display);font-size:15px;color:var(--orange);font-weight:700}
+.svc-card h3{margin-top:14px;font-size:19px}
+.svc-card p{color:var(--muted);margin-top:10px;font-size:14.5px}
+.svc-card .lnk{margin-top:16px;display:inline-block;font-size:13.5px;font-weight:600;color:var(--teal)}
+
+/* why */
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:36px}
+.why-item{border-top:2px solid var(--orange);padding-top:18px}
+.why-item .n{font-family:var(--display);font-size:40px;color:var(--orange)}
+.why-item h3{margin-top:6px;font-size:18px}
+.why-item p{color:var(--muted);margin-top:8px;font-size:14.5px}
+
+/* projects */
+.proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.proj-card{aspect-ratio:4/3;border-radius:3px;border:1px solid var(--line);position:relative;overflow:hidden;cursor:pointer}
+.proj-card .ph{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;padding:16px;font-size:14px;color:var(--ink);font-weight:600}
+.proj-card .ph .icn{align-self:flex-end;color:rgba(20,24,28,.28)}
+.proj-card span{position:relative;z-index:1;background:rgba(255,255,255,.88);color:var(--ink);padding:4px 10px;border-radius:2px;align-self:flex-start}
+.blog-cover{display:flex;align-items:center;justify-content:center;color:rgba(20,24,28,.22)}
+
+/* blog */
+.blog-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.blog-card{border:1px solid var(--line);border-radius:3px;overflow:hidden;cursor:pointer;transition:transform .2s ease,border-color .2s ease;background:var(--bg-2)}
+.blog-card:hover{transform:translateY(-4px);border-color:var(--orange)}
+.blog-cover{aspect-ratio:16/10;position:relative}
+.blog-body{padding:18px}
+.blog-body .cat{font-size:12px;color:var(--teal);font-weight:700}
+.blog-body h3{font-size:16.5px;margin-top:8px;line-height:1.3}
+.blog-body .date{font-size:12.5px;color:var(--muted);margin-top:10px}
+
+/* cta */
+.cta{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cta-grid{display:flex;justify-content:space-between;align-items:center;gap:40px;flex-wrap:wrap}
+.cta h2{max-width:640px}
+.cta-actions{display:flex;gap:14px;flex-wrap:wrap}
+
+/* contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:60px}
+.contact-info div{margin-bottom:26px}
+.contact-info .lbl{font-size:12.5px;color:var(--muted);text-transform:uppercase;letter-spacing:1px}
+.contact-info .val{font-size:19px;margin-top:6px;font-weight:600}
+.contact-info .placeholder{color:var(--muted);font-style:italic;font-size:14.5px}
+.map-card{margin-top:34px;padding:20px;border:1px solid var(--line);border-radius:3px;background:var(--bg-2)}
+.map-card-top{display:flex;align-items:center;gap:12px}
+.map-card .pin{width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,159,28,.4);color:var(--orange);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0}
+form{display:grid;gap:14px}
+form .row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+input,select,textarea{width:100%;background:var(--bg-2);border:1px solid var(--line);color:var(--ink);
+  padding:13px 14px;border-radius:3px;font-family:var(--body);font-size:14.5px}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--orange);outline-offset:1px}
+textarea{min-height:120px;resize:vertical}
+.form-msg{font-size:14px;color:var(--teal);display:none}
+.form-msg.show{display:block}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding:56px 0 110px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+footer h4{font-size:14px;margin-bottom:14px}
+footer ul{list-style:none;display:grid;gap:9px}
+footer a{color:var(--muted);font-size:14.5px}
+footer a:hover{color:var(--orange)}
+.foot-bottom{margin-top:50px;padding-top:24px;border-top:1px solid var(--line);
+  display:flex;justify-content:space-between;color:var(--muted);font-size:13px;flex-wrap:wrap;gap:10px}
+.social{display:flex;gap:10px}
+.social span{width:34px;height:34px;border:1px solid var(--line);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--muted)}
+
+/* mobile sticky bar */
+.mbar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:60;
+  padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:var(--bg-2);border-top:1px solid var(--line);gap:10px}
+.mbar a{flex:1;text-align:center;padding:13px;border-radius:3px;font-weight:700;font-size:14.5px}
+.mbar .call{background:var(--orange);color:#171200}
+.mbar .wa{background:var(--teal-light);color:#0b6e64;border:1px solid rgba(46,196,182,.4)}
+
+/* overlay (blog article / service detail / lightbox) */
+.overlay{position:fixed;inset:0;background:rgba(255,255,255,.88);backdrop-filter:blur(4px);z-index:80;
+  visibility:hidden;opacity:0;transition:opacity .3s ease;overflow-y:auto;padding:90px 20px 60px}
+.overlay.open{visibility:visible;opacity:1}
+.overlay-panel{max-width:760px;margin:0 auto;background:var(--bg-2);border:1px solid var(--line);border-radius:4px;padding:44px;
+  transform:translateY(18px);opacity:0;transition:transform .35s ease,opacity .35s ease}
+.overlay.open .overlay-panel{transform:translateY(0);opacity:1}
+.overlay-close{position:fixed;top:20px;right:24px;z-index:81;background:var(--bg-2);border:1px solid var(--line);
+  color:var(--ink);width:42px;height:42px;border-radius:50%;font-size:20px;cursor:pointer}
+.ov-cat{color:var(--teal);font-size:13px;font-weight:700}
+.overlay-panel h2{margin-top:10px;font-size:clamp(26px,4vw,38px)}
+.overlay-panel .meta{color:var(--muted);font-size:13.5px;margin-top:10px}
+.overlay-panel .content p{margin-top:16px;color:#3a4147}
+.overlay-panel .toc{margin-top:24px;padding:16px;border:1px solid var(--line);border-radius:3px}
+.overlay-panel .toc div{font-size:12.5px;color:var(--muted);margin-bottom:8px;text-transform:uppercase;letter-spacing:1px}
+.overlay-panel .toc ol{padding-left:18px;font-size:14px;color:var(--muted)}
+.related{margin-top:34px;padding-top:24px;border-top:1px solid var(--line)}
+.related h4{font-size:14px;margin-bottom:14px}
+.related-list{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.related-list div{padding:12px;border:1px solid var(--line);border-radius:3px;cursor:pointer;font-size:14px}
+.related-list div:hover{border-color:var(--orange)}
+.ov-cta{margin-top:30px;padding:22px;background:var(--bg);border:1px solid var(--line);border-radius:3px;text-align:center}
+.lightbox-img{width:100%;aspect-ratio:4/3;border-radius:3px}
+
+/* reveal on scroll */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:translateY(0)}
+
+@media(max-width:980px){
+  nav{display:none}
+  .burger{display:block}
+  .hero-grid{grid-template-columns:1fr}
+  .hero-panel{aspect-ratio:16/9}
+  .about-grid,.contact-grid{grid-template-columns:1fr}
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .why-grid{grid-template-columns:repeat(2,1fr)}
+  .proj-grid{grid-template-columns:repeat(2,1fr)}
+  .blog-grid{grid-template-columns:repeat(2,1fr)}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  form .row2{grid-template-columns:1fr}
+  .mbar{display:flex}
+  body{padding-bottom:70px}
+}
+@media(max-width:560px){
+  .svc-grid,.proj-grid,.blog-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="#" class="logo"><b>ORSA <span>ELEKTRİK</span></b><small>UYDU VE KAMERA SİSTEMLERİ</small></a>
+    <nav>
+      <a href="#anasayfa">Ana Sayfa</a>
+      <a href="#hakkimizda">Hakkımızda</a>
+      <a href="#hizmetler">Hizmetlerimiz</a>
+      <a href="#projeler">Projelerimiz</a>
+      <a href="#blog">Blog</a>
+      <a href="#iletisim">İletişim</a>
+    </nav>
+    <div class="head-actions">
+      <a href="tel:+905334723419" class="btn btn-primary">Hemen Ara</a>
+      <button class="burger" onclick="document.getElementById('mnav').classList.toggle('open')">☰</button>
+    </div>
+  </div>
+</header>
+<div class="mobilenav" id="mnav">
+  <a href="#anasayfa" onclick="closeMnav()">Ana Sayfa</a>
+  <a href="#hakkimizda" onclick="closeMnav()">Hakkımızda</a>
+  <a href="#hizmetler" onclick="closeMnav()">Hizmetlerimiz</a>
+  <a href="#projeler" onclick="closeMnav()">Projelerimiz</a>
+  <a href="#blog" onclick="closeMnav()">Blog</a>
+  <a href="#iletisim" onclick="closeMnav()">İletişim</a>
+</div>
+
+<section class="hero" id="anasayfa">
+  <div class="wrap hero-grid">
+    <div>
+      <h1><span class="l1">GÜVENLİ ENERJİ.</span><span class="l2">AKILLI ÇÖZÜMLER.</span></h1>
+      <p class="lead">Elektrik, güvenlik kamerası ve uydu sistemlerinde profesyonel çözümler.</p>
+      <div class="hero-ctas">
+        <a href="#hizmetler" class="btn btn-primary">Hizmetlerimizi Keşfedin</a>
+        <a href="tel:+905334723419" class="btn btn-outline">Hemen Ara</a>
+      </div>
+    </div>
+    <div class="hero-panel">
+      <svg viewBox="0 0 400 500" preserveAspectRatio="none">
+        <path class="wire" d="M0 380 L120 380 L150 320 L200 320 L230 260 L400 260"/>
+        <path class="wire" d="M0 120 L90 120 L120 180 L260 180 L290 240" style="animation-delay:1.2s"/>
+        <circle cx="230" cy="260" r="5" fill="#ff9f1c"/>
+        <circle cx="120" cy="180" r="5" fill="#2ec4b6"/>
+      </svg>
+      <div class="tag">Pano · Kamera · Uydu — canlı sistem şeması</div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker"><div class="ticker-track" id="tickerTrack"></div></div>
+
+<section id="hakkimizda">
+  <div class="wrap about-grid">
+    <div class="reveal">
+      <div class="eyebrow">Hakkımızda</div>
+      <h2>Güvenilir Çözümler, Profesyonel İşçilik</h2>
+      <p>ORSA Elektrik olarak elektrik sistemlerinden güvenlik kameralarına, uydu sistemlerinden arıza ve bakım hizmetlerine kadar yaşam ve çalışma alanlarınız için profesyonel çözümler sunuyoruz. İhtiyacınıza uygun, güvenilir ve kaliteli uygulamalarla yanınızdayız.</p>
+      <div class="hero-ctas" style="margin-top:28px"><a href="#iletisim" class="btn btn-outline">Bizimle İletişime Geçin</a></div>
+    </div>
+    <div class="about-visual reveal"><div class="grid-lines"></div><div class="about-caps" id="aboutCaps"></div></div>
+  </div>
+</section>
+
+<section id="hizmetler">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Hizmetlerimiz</div>
+      <h2>Uçtan Uca Elektrik ve Güvenlik Çözümleri</h2>
+    </div>
+    <div class="svc-grid" id="svcGrid"></div>
+  </div>
+</section>
+
+<section id="neden">
+  <div class="wrap">
+    <div class="section-head reveal"><h2>NEDEN ORSA?</h2></div>
+    <div class="why-grid">
+      <div class="why-item reveal"><div class="n">01</div><h3>Profesyonel İşçilik</h3><p>Alanında deneyimli ekiple titiz uygulama.</p></div>
+      <div class="why-item reveal"><div class="n">02</div><h3>Güvenilir Hizmet</h3><p>Şeffaf süreç ve uzun ömürlü çözümler.</p></div>
+      <div class="why-item reveal"><div class="n">03</div><h3>Hızlı Çözüm</h3><p>Arızaya ve talebe hızlı müdahale.</p></div>
+      <div class="why-item reveal"><div class="n">04</div><h3>Kaliteli Uygulama</h3><p>Standartlara uygun malzeme ve işçilik.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="projeler">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Projelerimiz</div>
+      <h2>Yaptığımız İşlerden Bazıları</h2>
+    </div>
+    <div class="proj-grid" id="projGrid"></div>
+  </div>
+</section>
+
+<section id="blog">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Blog</div>
+      <h2>Elektrik ve Güvenlik Rehberi</h2>
+    </div>
+    <div class="blog-grid" id="blogGrid"></div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap cta-grid">
+    <h2>Elektrik veya Güvenlik Sisteminiz İçin Çözüme mi İhtiyacınız Var?</h2>
+    <div>
+      <p class="muted" style="margin-bottom:18px">ORSA Elektrik ile iletişime geçin, ihtiyacınıza uygun çözümü birlikte belirleyelim.</p>
+      <div class="cta-actions">
+        <a href="tel:+905334723419" class="btn btn-primary">0 533 472 34 19</a>
+        <a href="https://wa.me/905334723419?text=Merhaba%20ORSA%20Elektrik%2C%20hizmetleriniz%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." class="btn btn-wa" target="_blank" rel="noopener"><span class="pulse-dot"></span>WhatsApp'tan Yaz</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="iletisim">
+  <div class="wrap contact-grid">
+    <div class="contact-info reveal">
+      <div class="eyebrow">İletişim</div>
+      <h2 style="margin-bottom:26px">BİZE ULAŞIN</h2>
+      <div><div class="lbl">Telefon</div><a class="val" href="tel:+905334723419">0 533 472 34 19</a></div>
+      <div><div class="lbl">WhatsApp</div><a class="val" style="color:var(--teal)" href="https://wa.me/905334723419" target="_blank" rel="noopener">Mesaj Gönder</a></div>
+      <div><div class="lbl">Adres</div><div class="val" style="font-size:16px;font-weight:500">Zümrütevler, Akşemsettin Cd. No:3/C, 34852 Maltepe/İstanbul</div></div>
+      <div><div class="lbl">Çalışma Saatleri</div><div class="val" style="font-size:16px;font-weight:500">Pazartesi–Cumartesi: 24 saat açık · Pazar: Kapalı</div></div>
+      <div class="map-card">
+        <div class="map-card-top"><span class="pin"><svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 2c-4 0-7 3-7 7 0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="9" r="2.4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span><div><b>Orsa Elektrik</b><span class="muted" style="display:block;font-size:13px">Maltepe / İstanbul</span></div></div>
+        <a class="btn btn-outline" style="margin-top:14px" href="https://www.google.com/maps/search/?api=1&query=Orsa+Elektrik&query_place_id=ChIJ4_tauUHFyhQRDrI8beDedm0" target="_blank" rel="noopener">Haritada Aç</a>
+      </div>
+    </div>
+    <form id="contactForm" onsubmit="return handleForm(event)">
+      <div class="row2">
+        <input required placeholder="Ad Soyad" name="name">
+        <input required placeholder="Telefon" name="phone">
+      </div>
+      <input type="email" required placeholder="E-posta" name="email">
+      <select name="service">
+        <option value="">İlgilendiğiniz Hizmet</option>
+        <option>Elektrik Tesisatı</option><option>Elektrik Arıza ve Onarım</option>
+        <option>Elektrik Pano Sistemleri</option><option>Aydınlatma Sistemleri</option>
+        <option>Güvenlik Kamera Sistemleri</option><option>Uydu Sistemleri</option>
+        <option>Görüntülü Diafon Sistemleri</option><option>Network ve Data Sistemleri</option>
+      </select>
+      <textarea placeholder="Mesajınız" name="message"></textarea>
+      <button class="btn btn-primary" type="submit">Gönder</button>
+      <div class="form-msg" id="formMsg">Mesajınız alındı, en kısa sürede size dönüş yapacağız.</div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <div class="logo" style="margin-bottom:14px"><b>ORSA <span>ELEKTRİK</span></b></div>
+      <p class="muted" style="font-size:14.5px">Elektrik • Uydu • Kamera Sistemleri</p>
+      <div class="social" style="margin-top:18px"><span>IG</span><span>FB</span><span>YT</span></div>
+    </div>
+    <div><h4>Hızlı Bağlantılar</h4><ul><li><a href="#hizmetler">Hizmetlerimiz</a></li><li><a href="#blog">Blog</a></li><li><a href="#iletisim">İletişim</a></li></ul></div>
+    <div><h4>İletişim</h4><ul><li><a href="tel:+905334723419">0 533 472 34 19</a></li><li><a href="https://wa.me/905334723419" target="_blank" rel="noopener">WhatsApp</a></li></ul></div>
+  </div>
+  <div class="wrap foot-bottom"><span>© ORSA Elektrik. Tüm Hakları Saklıdır.</span><span>Elektrik Tesisatı · Güvenlik Kamerası · Uydu Sistemleri</span></div>
+</footer>
+
+<div class="mbar"><a class="call" href="tel:+905334723419">ARA</a><a class="wa" href="https://wa.me/905334723419" target="_blank" rel="noopener">WHATSAPP</a></div>
+
+<div class="overlay" id="overlay"><button class="overlay-close" onclick="closeOverlay()">✕</button><div class="overlay-panel" id="overlayBody"></div></div>
+
+<script>
+const ICONS={
+ bolt:'<polyline points="13,2 4,14 11,14 9,22 20,10 13,10 13,2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>',
+ alert:'<polygon points="12,3 22,21 2,21" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="17.3" r="1" fill="currentColor"/>',
+ panel:'<rect x="4" y="3" width="16" height="18" rx="1" fill="none" stroke="currentColor" stroke-width="1.6"/><line x1="4" y1="9" x2="20" y2="9" stroke="currentColor" stroke-width="1.6"/><line x1="4" y1="15" x2="20" y2="15" stroke="currentColor" stroke-width="1.6"/><line x1="12" y1="3" x2="12" y2="21" stroke="currentColor" stroke-width="1.6"/>',
+ bulb:'<circle cx="12" cy="10" r="7" fill="none" stroke="currentColor" stroke-width="1.6"/><line x1="9" y1="21" x2="15" y2="21" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="10" y1="17.5" x2="14" y2="17.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>',
+ camera:'<rect x="2.5" y="7" width="14" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><polygon points="16.5,10 21.5,7.3 21.5,17.7 16.5,15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="9.5" cy="12.5" r="3" fill="none" stroke="currentColor" stroke-width="1.6"/>',
+ dish:'<path d="M3 12a9 9 0 0 1 9-9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M12 3l9 9-4 4-9-9z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><line x1="12" y1="12" x2="19" y2="19" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="19" cy="19" r="1.4" fill="currentColor"/>',
+ phone:'<rect x="6" y="2" width="12" height="20" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="7" r="2" fill="none" stroke="currentColor" stroke-width="1.6"/><line x1="9" y1="14" x2="15" y2="14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="9" y1="17" x2="15" y2="17" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>',
+ network:'<circle cx="12" cy="4.5" r="2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="5" cy="18" r="2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="19" cy="18" r="2" fill="none" stroke="currentColor" stroke-width="1.6"/><line x1="12" y1="6.4" x2="6.3" y2="16.3" stroke="currentColor" stroke-width="1.6"/><line x1="12" y1="6.4" x2="17.7" y2="16.3" stroke="currentColor" stroke-width="1.6"/>'
+};
+function icon(name,size=22){return `<svg viewBox="0 0 24 24" width="${size}" height="${size}">${ICONS[name]}</svg>`;}
+
+const services=[
+ {n:'01',ic:'bolt',t:'Elektrik Tesisatı',d:'Konut ve iş yerleri için güvenli ve profesyonel elektrik tesisatı çözümleri.',slug:'elektrik-tesisati',detail:'Yeni yapılarda sıfırdan tesisat kurulumundan mevcut tesisatın güçlendirilmesine kadar; yönetmeliklere uygun kablolama, topraklama ve devre planlaması yapıyoruz.'},
+ {n:'02',ic:'alert',t:'Elektrik Arıza ve Onarım',d:'Elektrik arızalarının tespiti ve ihtiyaç duyulan onarım işlemleri.',slug:'elektrik-ariza',detail:'Kaçak akım, kesinti ve sigorta atmalarında hızlı teşhis ile kalıcı çözüm sağlıyor, acil arızalara öncelikli müdahale ediyoruz.'},
+ {n:'03',ic:'panel',t:'Elektrik Pano Sistemleri',d:'Elektrik panosu kurulumu, düzenleme, bakım ve yenileme hizmetleri.',slug:'elektrik-pano-sistemleri',detail:'Konut ve endüstriyel pano tasarımı, etiketleme, periyodik bakım ve eski panoların güvenli standartlara yükseltilmesi.'},
+ {n:'04',ic:'bulb',t:'Aydınlatma Sistemleri',d:'İç ve dış mekânlar için modern ve verimli aydınlatma çözümleri.',slug:'aydinlatma-sistemleri',detail:'LED dönüşümü, otomasyonlu aydınlatma ve dış cephe/peyzaj aydınlatması ile enerji verimliliği sağlıyoruz.'},
+ {n:'05',ic:'camera',t:'Güvenlik Kamera Sistemleri',d:'Ev, iş yeri, mağaza, ofis ve diğer alanlar için kamera ve güvenlik sistemi kurulumu.',slug:'guvenlik-kamera-sistemleri',detail:'IP ve analog kamera kurulumu, uzaktan izleme, kayıt sistemleri ve mevcut sistemlerin bakımı.'},
+ {n:'06',ic:'dish',t:'Uydu Sistemleri',d:'Uydu anten kurulumu, merkezi uydu sistemleri, sinyal ve arıza çözümleri.',slug:'uydu-sistemleri',detail:'Bireysel ve merkezi uydu sistemleri kurulumu, kanal/sinyal sorunlarının giderilmesi ve apartman tipi çözümler.'},
+ {n:'07',ic:'phone',t:'Görüntülü Diafon Sistemleri',d:'Apartman ve iş yerleri için görüntülü diafon kurulumu ve teknik destek.',slug:'goruntulu-diafon',detail:'Görüntülü/sesli diafon kurulumu, panel değişimi ve apartman geneli sistem entegrasyonu.'},
+ {n:'08',ic:'network',t:'Network ve Data Sistemleri',d:'İnternet, network ve data kablolama çözümleri.',slug:'network-data-sistemleri',detail:'Ofis ve konutlarda yapısal kablolama, switch/router kurulumu ve ağ altyapısı düzenlemesi.'}
+];
+const blog=[
+ {slug:'elektrik-tesisati-ne-zaman-yenilenmeli',cat:'Tesisat',title:'Elektrik Tesisatı Ne Zaman Yenilenmeli?',date:'12 Ocak 2026',excerpt:'Eski tesisatın hangi belirtileri yenileme zamanının geldiğini gösterir?',content:['Sık sigorta atması, prizlerde ısınma veya ışıkların titremesi, tesisatın yenilenmesi gerektiğinin ilk işaretlerindendir.','20 yılı aşkın binalarda kablo yalıtımı zamanla yıpranabilir; periyodik kontrol bu riskleri erken tespit etmenizi sağlar.','Yenileme öncesi profesyonel bir keşif ile ihtiyaç doğru şekilde belirlenmelidir.']},
+ {slug:'guvenlik-kamerasi-secerken-nelere-dikkat-edilmeli',cat:'Güvenlik',title:'Güvenlik Kamerası Seçerken Nelere Dikkat Edilmeli?',date:'18 Ocak 2026',excerpt:'Çözünürlük, gece görüşü ve kayıt kapasitesi seçimde öne çıkan kriterlerdir.',content:['Alanın büyüklüğüne göre kamera sayısı ve açısı belirlenmelidir.','Gece görüş performansı ve hareket algılama özellikleri güvenlik seviyesini doğrudan etkiler.','Kayıtların ne kadar süre saklanacağı, disk kapasitesi planlamasında önemlidir.']},
+ {slug:'evlerde-elektrik-kacagi-nasil-anlasilir',cat:'Arıza',title:'Evlerde Elektrik Kaçağı Nasıl Anlaşılır?',date:'25 Ocak 2026',excerpt:'Kaçak akım rölesinin sık atması ciddi bir uyarı işaretidir.',content:['Kaçak akım rölesinin (kaçak sigortanın) sebepsiz yere atması, tesisatta bir kaçak olabileceğinin göstergesidir.','Nemli alanlardaki priz ve anahtarlar kaçak riskini artırır.','Kaçak tespiti uzman ekipmanı gerektirir; kendiniz müdahale etmeyin.']},
+ {slug:'sigorta-neden-surekli-atar',cat:'Arıza',title:'Sigorta Neden Sürekli Atar?',date:'2 Şubat 2026',excerpt:'Aşırı yüklenme ve kısa devre en sık karşılaşılan nedenlerdendir.',content:['Aynı devreye çok fazla cihaz bağlanması sigortanın aşırı yüklenmesine yol açar.','Kısa devre veya eskimiş kablolar da tekrarlayan atmalara neden olabilir.','Sorun devam ediyorsa pano ve tesisatın uzman tarafından kontrol edilmesi gerekir.']},
+ {slug:'guvenlik-kamera-sistemlerinin-avantajlari',cat:'Güvenlik',title:'Güvenlik Kamerası Sistemlerinin Avantajları Nelerdir?',date:'9 Şubat 2026',excerpt:'Caydırıcılık ve uzaktan izleme en büyük avantajlardandır.',content:['Görünür kameralar, hırsızlık ve izinsiz girişlere karşı caydırıcı etki yaratır.','Uzaktan erişim ile mekânınızı telefonunuzdan anlık izleyebilirsiniz.','Olay anında kayıt, delil niteliği taşıyarak güvenliği artırır.']},
+ {slug:'uydu-sinyali-neden-gider',cat:'Uydu',title:'Uydu Sinyali Neden Gider?',date:'16 Şubat 2026',excerpt:'Hava koşulları ve anten hizalaması sinyal kaybının başlıca sebepleridir.',content:['Şiddetli yağış ve rüzgar anten açısını kaydırarak sinyal kaybına neden olabilir.','Kablo bağlantılarındaki oksitlenme de sinyal kalitesini düşürür.','Düzenli anten kontrolü sinyal kesintilerini önler.']},
+ {slug:'elektrik-panosu-bakimi-neden-onemlidir',cat:'Tesisat',title:'Elektrik Panosu Bakımı Neden Önemlidir?',date:'23 Şubat 2026',excerpt:'Periyodik bakım, yangın ve arıza riskini önemli ölçüde azaltır.',content:['Zamanla gevşeyen bağlantılar ısınmaya ve yangın riskine yol açabilir.','Periyodik bakım, etiketleme ve kontrol ile pano ömrü uzatılır.','Endüstriyel tesislerde pano bakımı yasal zorunluluk da olabilir.']},
+ {slug:'is-yerleri-icin-kamera-sistemi-nasil-secilir',cat:'Güvenlik',title:'İş Yerleri İçin Kamera Sistemi Nasıl Seçilir?',date:'2 Mart 2026',excerpt:'Alan büyüklüğü ve giriş noktaları sistem seçiminde belirleyicidir.',content:['Giriş-çıkış noktaları ve kasa/stok alanları önceliklendirilmelidir.','Çalışan ve müşteri mahremiyetine uygun konumlandırma önemlidir.','Bulut veya yerel kayıt tercihine göre sistem kapasitesi planlanmalıdır.']}
+];
+const projects=[
+ {t:'Elektrik Panosu Kurulumu',ic:'panel',c:'linear-gradient(140deg,#ffe4bf,#ffffff)'},
+ {t:'Güvenlik Kamera Sistemi',ic:'camera',c:'linear-gradient(140deg,#cbf3f0,#ffffff)'},
+ {t:'Konut Tesisatı',ic:'bolt',c:'linear-gradient(140deg,#ffd7a3,#ffffff)'},
+ {t:'Uydu Anten Kurulumu',ic:'dish',c:'linear-gradient(140deg,#b8efea,#ffffff)'},
+ {t:'İç Mekân Aydınlatma',ic:'bulb',c:'linear-gradient(140deg,#ffe9c2,#ffffff)'},
+ {t:'Ofis Pano Yenileme',ic:'panel',c:'linear-gradient(140deg,#d9f6f3,#ffffff)'}
+];
+
+const svcGrid=document.getElementById('svcGrid');
+services.forEach(s=>{
+  const el=document.createElement('div');
+  el.className='svc-card reveal';
+  el.innerHTML=`<div class="svc-icon">${icon(s.ic,22)}</div><div class="svc-num">${s.n}</div><h3>${s.t}</h3><p>${s.d}</p><span class="lnk">Detayları Gör →</span>`;
+  el.onclick=()=>openService(s.slug);
+  svcGrid.appendChild(el);
+});
+
+const blogGrid=document.getElementById('blogGrid');
+blog.forEach(b=>{
+  const el=document.createElement('div');
+  el.className='blog-card reveal';
+  const bi={Tesisat:'bolt',Güvenlik:'camera',Arıza:'alert',Uydu:'dish'}[b.cat]||'bolt';
+  el.innerHTML=`<div class="blog-cover" style="background:linear-gradient(150deg,#fff3e2,#ffffff)">${icon(bi,34)}</div>
+    <div class="blog-body"><div class="cat">${b.cat}</div><h3>${b.title}</h3><div class="date">${b.date}</div></div>`;
+  el.onclick=()=>openBlog(b.slug);
+  blogGrid.appendChild(el);
+});
+
+const projGrid=document.getElementById('projGrid');
+projects.forEach(p=>{
+  const el=document.createElement('div');
+  el.className='proj-card reveal';
+  el.innerHTML=`<div class="ph" style="background:${p.c}"><span>${p.t}</span><span class="icn">${icon(p.ic,40)}</span></div>`;
+  el.onclick=()=>openLightbox(p.t,p.c);
+  projGrid.appendChild(el);
+});
+
+const aboutCaps=document.getElementById('aboutCaps');
+services.forEach(s=>{
+  const el=document.createElement('div');
+  el.className='cap';
+  el.innerHTML=`<span class="ic">${icon(s.ic,26)}</span><span>${s.t}</span>`;
+  aboutCaps.appendChild(el);
+});
+
+function closeMnav(){document.getElementById('mnav').classList.remove('open')}
+
+// ticker
+const tickerTrack=document.getElementById('tickerTrack');
+const tickerItems=[...services,...services].map(s=>`<b>${icon(s.ic,16)}${s.t}<span class="dot"></span></b>`).join('');
+tickerTrack.innerHTML=tickerItems;
+
+// header shrink on scroll
+const headerEl=document.querySelector('header');
+let ticking=false;
+window.addEventListener('scroll',()=>{
+  if(!ticking){
+    requestAnimationFrame(()=>{ headerEl.classList.toggle('scrolled', window.scrollY>10); ticking=false; });
+    ticking=true;
+  }
+});
+
+// hero panel cursor spotlight
+const heroPanel=document.querySelector('.hero-panel');
+if(heroPanel){
+  heroPanel.addEventListener('mousemove',e=>{
+    const r=heroPanel.getBoundingClientRect();
+    heroPanel.style.setProperty('--mx',(e.clientX-r.left)+'px');
+    heroPanel.style.setProperty('--my',(e.clientY-r.top)+'px');
+  });
+}
+
+// scrollspy
+const navLinks=[...document.querySelectorAll('nav a')];
+const spySections=navLinks.map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
+const spy=new IntersectionObserver(entries=>{
+  entries.forEach(en=>{
+    if(en.isIntersecting){
+      navLinks.forEach(a=>a.classList.remove('active'));
+      const link=navLinks.find(a=>a.getAttribute('href')==='#'+en.target.id);
+      if(link) link.classList.add('active');
+    }
+  });
+},{rootMargin:'-45% 0px -50% 0px'});
+spySections.forEach(s=>spy.observe(s));
+
+function openOverlay(html){
+  document.getElementById('overlayBody').innerHTML=html;
+  document.getElementById('overlay').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeOverlay(){
+  document.getElementById('overlay').classList.remove('open');
+  document.body.style.overflow='';
+  history.replaceState(null,'',location.pathname+location.search+'#');
+}
+
+function openService(slug){
+  const s=services.find(x=>x.slug===slug);
+  document.title=`${s.t} | ORSA Elektrik`;
+  location.hash='hizmet/'+slug;
+  openOverlay(`<div class="ov-cat">Hizmet</div><h2>${s.t}</h2>
+    <div class="content"><p>${s.d}</p><p>${s.detail}</p></div>
+    <div class="ov-cta"><p style="margin-bottom:14px">Bu hizmet hakkında bilgi almak için hemen ulaşın.</p>
+    <a class="btn btn-primary" href="tel:+905334723419">0 533 472 34 19</a></div>`);
+}
+
+function openBlog(slug){
+  const b=blog.find(x=>x.slug===slug);
+  document.title=`${b.title} | ORSA Elektrik Blog`;
+  location.hash='blog/'+slug;
+  const related=blog.filter(x=>x.slug!==slug).sort(()=>.5-Math.random()).slice(0,2);
+  openOverlay(`<div class="ov-cat">${b.cat}</div><h2>${b.title}</h2>
+    <div class="meta">${b.date} · ORSA Elektrik</div>
+    <div class="toc"><div>İçindekiler</div><ol>${b.content.map((_,i)=>`<li>Bölüm ${i+1}</li>`).join('')}</ol></div>
+    <div class="content">${b.content.map(p=>`<p>${p}</p>`).join('')}</div>
+    <div class="related"><h4>İlgili Yazılar</h4><div class="related-list">
+      ${related.map(r=>`<div onclick="openBlog('${r.slug}')">${r.title}</div>`).join('')}
+    </div></div>
+    <div class="ov-cta"><p style="margin-bottom:14px">Sorularınız için ORSA Elektrik ile iletişime geçin.</p>
+    <a class="btn btn-primary" href="tel:+905334723419">0 533 472 34 19</a></div>`);
+}
+
+function openLightbox(title,bg){
+  openOverlay(`<div class="ov-cat">Proje</div><h2>${title}</h2><div class="lightbox-img" style="background:${bg}"></div>`);
+}
+
+function handleForm(e){
+  e.preventDefault();
+  document.getElementById('formMsg').classList.add('show');
+  e.target.reset();
+  return false;
+}
+
+// scroll reveal
+const io=new IntersectionObserver(entries=>{
+  entries.forEach(en=>{ if(en.isIntersecting){en.target.classList.add('in'); io.unobserve(en.target);} });
+},{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+// deep-link support on load
+window.addEventListener('DOMContentLoaded',()=>{
+  const h=location.hash.replace('#','');
+  if(h.startsWith('blog/')) openBlog(h.slice(5));
+  if(h.startsWith('hizmet/')) openService(h.slice(7));
+});
+</script>
+</body>
+</html>

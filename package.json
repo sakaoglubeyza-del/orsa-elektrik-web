@@ -1,0 +1,13 @@
+{
+  "name": "orsa-elektrik-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ORSA Elektrik kurumsal web sitesi - statik HTML/CSS/JS",
+  "scripts": {
+    "dev": "npx serve . -l 3000",
+    "start": "npx serve . -l 3000"
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}
