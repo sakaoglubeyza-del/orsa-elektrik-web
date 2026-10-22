@@ -1,0 +1,74 @@
+[
+  {
+    "n": "01",
+    "ic": "bolt",
+    "t": "Elektrik Tesisatı",
+    "d": "Konut ve iş yerleri için güvenli ve profesyonel elektrik tesisatı çözümleri.",
+    "slug": "elektrik-tesisati",
+    "detail": "Yeni yapılarda sıfırdan tesisat kurulumundan mevcut tesisatın güçlendirilmesine kadar; yönetmeliklere uygun kablolama, topraklama ve devre planlaması yapıyoruz.",
+    "image": "tesisat"
+  },
+  {
+    "n": "02",
+    "ic": "alert",
+    "t": "Elektrik Arıza ve Onarım",
+    "d": "Elektrik arızalarının tespiti ve ihtiyaç duyulan onarım işlemleri.",
+    "slug": "elektrik-ariza",
+    "detail": "Kaçak akım, kesinti ve sigorta atmalarında hızlı teşhis ile kalıcı çözüm sağlıyor, acil arızalara öncelikli müdahale ediyoruz.",
+    "image": "ariza"
+  },
+  {
+    "n": "03",
+    "ic": "panel",
+    "t": "Elektrik Pano Sistemleri",
+    "d": "Elektrik panosu kurulumu, düzenleme, bakım ve yenileme hizmetleri.",
+    "slug": "elektrik-pano-sistemleri",
+    "detail": "Konut ve endüstriyel pano tasarımı, etiketleme, periyodik bakım ve eski panoların güvenli standartlara yükseltilmesi.",
+    "image": "pano"
+  },
+  {
+    "n": "04",
+    "ic": "bulb",
+    "t": "Aydınlatma Sistemleri",
+    "d": "İç ve dış mekânlar için modern ve verimli aydınlatma çözümleri.",
+    "slug": "aydinlatma-sistemleri",
+    "detail": "LED dönüşümü, otomasyonlu aydınlatma ve dış cephe/peyzaj aydınlatması ile enerji verimliliği sağlıyoruz.",
+    "image": "aydinlatma"
+  },
+  {
+    "n": "05",
+    "ic": "camera",
+    "t": "Güvenlik Kamera Sistemleri",
+    "d": "Ev, iş yeri, mağaza, ofis ve diğer alanlar için kamera ve güvenlik sistemi kurulumu.",
+    "slug": "guvenlik-kamera-sistemleri",
+    "detail": "IP ve analog kamera kurulumu, uzaktan izleme, kayıt sistemleri ve mevcut sistemlerin bakımı.",
+    "image": "kamera"
+  },
+  {
+    "n": "06",
+    "ic": "dish",
+    "t": "Uydu Sistemleri",
+    "d": "Uydu anten kurulumu, merkezi uydu sistemleri, sinyal ve arıza çözümleri.",
+    "slug": "uydu-sistemleri",
+    "detail": "Bireysel ve merkezi uydu sistemleri kurulumu, kanal/sinyal sorunlarının giderilmesi ve apartman tipi çözümler.",
+    "image": "uydu"
+  },
+  {
+    "n": "07",
+    "ic": "phone",
+    "t": "Görüntülü Diafon Sistemleri",
+    "d": "Apartman ve iş yerleri için görüntülü diafon kurulumu ve teknik destek.",
+    "slug": "goruntulu-diafon",
+    "detail": "Görüntülü/sesli diafon kurulumu, panel değişimi ve apartman geneli sistem entegrasyonu.",
+    "image": "diafon"
+  },
+  {
+    "n": "08",
+    "ic": "network",
+    "t": "Network ve Data Sistemleri",
+    "d": "İnternet, network ve data kablolama çözümleri.",
+    "slug": "network-data-sistemleri",
+    "detail": "Ofis ve konutlarda yapısal kablolama, switch/router kurulumu ve ağ altyapısı düzenlemesi.",
+    "image": "network"
+  }
+]

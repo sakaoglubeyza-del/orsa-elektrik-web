@@ -1,0 +1,106 @@
+[
+  {
+    "slug": "elektrik-tesisati-ne-zaman-yenilenmeli",
+    "cat": "Tesisat",
+    "title": "Elektrik Tesisatı Ne Zaman Yenilenmeli?",
+    "date": "12 Ocak 2026",
+    "excerpt": "Eski tesisatın hangi belirtileri yenileme zamanının geldiğini gösterir?",
+    "content": [
+      "Sık sigorta atması, prizlerde ısınma veya ışıkların titremesi, tesisatın yenilenmesi gerektiğinin ilk işaretlerindendir.",
+      "20 yılı aşkın binalarda kablo yalıtımı zamanla yıpranabilir; periyodik kontrol bu riskleri erken tespit etmenizi sağlar.",
+      "Yenileme öncesi profesyonel bir keşif ile ihtiyaç doğru şekilde belirlenmelidir."
+    ],
+    "image": "pano"
+  },
+  {
+    "slug": "guvenlik-kamerasi-secerken-nelere-dikkat-edilmeli",
+    "cat": "Güvenlik",
+    "title": "Güvenlik Kamerası Seçerken Nelere Dikkat Edilmeli?",
+    "date": "18 Ocak 2026",
+    "excerpt": "Çözünürlük, gece görüşü ve kayıt kapasitesi seçimde öne çıkan kriterlerdir.",
+    "content": [
+      "Alanın büyüklüğüne göre kamera sayısı ve açısı belirlenmelidir.",
+      "Gece görüş performansı ve hareket algılama özellikleri güvenlik seviyesini doğrudan etkiler.",
+      "Kayıtların ne kadar süre saklanacağı, disk kapasitesi planlamasında önemlidir."
+    ],
+    "image": "kamera"
+  },
+  {
+    "slug": "evlerde-elektrik-kacagi-nasil-anlasilir",
+    "cat": "Arıza",
+    "title": "Evlerde Elektrik Kaçağı Nasıl Anlaşılır?",
+    "date": "25 Ocak 2026",
+    "excerpt": "Kaçak akım rölesinin sık atması ciddi bir uyarı işaretidir.",
+    "content": [
+      "Kaçak akım rölesinin (kaçak sigortanın) sebepsiz yere atması, tesisatta bir kaçak olabileceğinin göstergesidir.",
+      "Nemli alanlardaki priz ve anahtarlar kaçak riskini artırır.",
+      "Kaçak tespiti uzman ekipmanı gerektirir; kendiniz müdahale etmeyin."
+    ],
+    "image": "ariza"
+  },
+  {
+    "slug": "sigorta-neden-surekli-atar",
+    "cat": "Arıza",
+    "title": "Sigorta Neden Sürekli Atar?",
+    "date": "2 Şubat 2026",
+    "excerpt": "Aşırı yüklenme ve kısa devre en sık karşılaşılan nedenlerdendir.",
+    "content": [
+      "Aynı devreye çok fazla cihaz bağlanması sigortanın aşırı yüklenmesine yol açar.",
+      "Kısa devre veya eskimiş kablolar da tekrarlayan atmalara neden olabilir.",
+      "Sorun devam ediyorsa pano ve tesisatın uzman tarafından kontrol edilmesi gerekir."
+    ],
+    "image": "ariza"
+  },
+  {
+    "slug": "guvenlik-kamera-sistemlerinin-avantajlari",
+    "cat": "Güvenlik",
+    "title": "Güvenlik Kamerası Sistemlerinin Avantajları Nelerdir?",
+    "date": "9 Şubat 2026",
+    "excerpt": "Caydırıcılık ve uzaktan izleme en büyük avantajlardandır.",
+    "content": [
+      "Görünür kameralar, hırsızlık ve izinsiz girişlere karşı caydırıcı etki yaratır.",
+      "Uzaktan erişim ile mekânınızı telefonunuzdan anlık izleyebilirsiniz.",
+      "Olay anında kayıt, delil niteliği taşıyarak güvenliği artırır."
+    ],
+    "image": "kamera"
+  },
+  {
+    "slug": "uydu-sinyali-neden-gider",
+    "cat": "Uydu",
+    "title": "Uydu Sinyali Neden Gider?",
+    "date": "16 Şubat 2026",
+    "excerpt": "Hava koşulları ve anten hizalaması sinyal kaybının başlıca sebepleridir.",
+    "content": [
+      "Şiddetli yağış ve rüzgar anten açısını kaydırarak sinyal kaybına neden olabilir.",
+      "Kablo bağlantılarındaki oksitlenme de sinyal kalitesini düşürür.",
+      "Düzenli anten kontrolü sinyal kesintilerini önler."
+    ],
+    "image": "uydu"
+  },
+  {
+    "slug": "elektrik-panosu-bakimi-neden-onemlidir",
+    "cat": "Tesisat",
+    "title": "Elektrik Panosu Bakımı Neden Önemlidir?",
+    "date": "23 Şubat 2026",
+    "excerpt": "Periyodik bakım, yangın ve arıza riskini önemli ölçüde azaltır.",
+    "content": [
+      "Zamanla gevşeyen bağlantılar ısınmaya ve yangın riskine yol açabilir.",
+      "Periyodik bakım, etiketleme ve kontrol ile pano ömrü uzatılır.",
+      "Endüstriyel tesislerde pano bakımı yasal zorunluluk da olabilir."
+    ],
+    "image": "pano"
+  },
+  {
+    "slug": "is-yerleri-icin-kamera-sistemi-nasil-secilir",
+    "cat": "Güvenlik",
+    "title": "İş Yerleri İçin Kamera Sistemi Nasıl Seçilir?",
+    "date": "2 Mart 2026",
+    "excerpt": "Alan büyüklüğü ve giriş noktaları sistem seçiminde belirleyicidir.",
+    "content": [
+      "Giriş-çıkış noktaları ve kasa/stok alanları önceliklendirilmelidir.",
+      "Çalışan ve müşteri mahremiyetine uygun konumlandırma önemlidir.",
+      "Bulut veya yerel kayıt tercihine göre sistem kapasitesi planlanmalıdır."
+    ],
+    "image": "kamera"
+  }
+]

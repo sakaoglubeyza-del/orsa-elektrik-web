@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Pano ve dağıtım sistemleri",
+    "type": "Elektrik Pano Sistemleri",
+    "image": "pano",
+    "description": "Pano düzenleme ve teknik altyapı uygulamaları için örnek görsel.",
+    "example": true
+  },
+  {
+    "title": "Mekâna uygun aydınlatma",
+    "type": "Aydınlatma Sistemleri",
+    "image": "aydinlatma",
+    "description": "İç mekân aydınlatma uygulamaları için örnek görsel.",
+    "example": true
+  },
+  {
+    "title": "Güvenlik altyapısı",
+    "type": "Güvenlik Kamera Sistemleri",
+    "image": "kamera",
+    "description": "Kamera sistemi uygulamaları için örnek görsel.",
+    "example": true
+  }
+]
